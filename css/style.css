@@ -1,0 +1,340 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: 'Kanit', sans-serif;
+}
+
+/*Personalizacion de Navbar*/
+.logo {
+  margin-right: 30px;
+}
+
+.logo:hover {
+  transform: scale(1.1);
+  transition: all 0.2s ease-in;
+}
+
+.colapsador {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.colapsador span {
+  padding: 20px 0;
+  
+}
+
+.colapsador span a {
+  text-decoration: none;
+  color: #F8E5C1;
+  font-size: 1.4rem;
+}
+
+.colapsador span a:hover {
+  color: #EDAB4C;
+  font-size: 1.5rem;
+  transition: all 0.2s ease-in;
+}
+
+/**Codigo de Seccion Inicio*/
+.inicio {
+  margin-top: 50px;
+}
+
+.inicio .mensaje-inicio {
+  display: none;
+}
+
+.inicio .carousel-item img {
+  height: 95vh;
+}
+
+.inicio .card-group {
+  display: none;
+}
+
+.inicio .carousel-item .carousel-mensaje {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  color: rgb(255, 255, 255);
+  font-size: 2.8rem;
+}
+
+.texto-parpadea {
+  animation-name: parpadeo;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+
+  -webkit-animation-name:parpadeo;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+}
+
+@-moz-keyframes parpadeo{  
+  0% { opacity: 1.0; }
+  50% { opacity: 0.0; }
+  100% { opacity: 1.0; }
+}
+
+@-webkit-keyframes parpadeo {  
+  0% { opacity: 1.0; }
+  50% { opacity: 0.0; }
+   100% { opacity: 1.0; }
+}
+
+@keyframes parpadeo {  
+  0% { opacity: 1.0; }
+   50% { opacity: 0.0; }
+  100% { opacity: 1.0; }
+}
+
+/*Codigo de Seccion dos*/
+
+.seccion-dos { 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+  width: 100vw;
+  height: 100vh;
+  opacity: 1;
+
+  background-image: url(../img/publicidad/gota-bolso.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: center;
+
+ }
+
+.seccion-dos .info-texto {
+  padding: 0 15%;
+  text-align: center;
+  color: aliceblue;
+
+  font-size: 1.1rem;
+  text-shadow: 1px 2px 50px #000000;
+  
+ }
+
+
+/*Codigo de Seccion tres*/
+
+.seccion-tres { 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100vw;
+  height: 100vh;
+
+  background-image: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.7),
+    rgba(0, 0, 0, 0.7)
+), url(../img/publicidad/6\ GOTA\ ROJA.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: center;
+  background-position-y:bottom;
+
+ }
+
+ .seccion-tres .card-body {
+  font-size: 2.2rem;
+  color: aliceblue;
+  border: 0;
+  font-weight: bold;
+
+  text-shadow: 1px 2px 30px #000000;
+  
+ }
+
+ .seccion-tres a {
+  color: aliceblue;
+  font-size: 1.5rem;
+  
+ }
+
+ /**/
+
+ #seccion-cuatro .card-group {
+  display: none;
+}
+
+#seccion-cuatro .carousel-item img {
+  height: 95vh;
+}
+
+#seccion-cuatro .mensaje-listo {
+  position: absolute;
+  top: 350%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  color:#EDAB4C;
+  font-size: 3rem;
+
+  z-index: 10;
+}
+
+.mensaje-listo p {
+  text-align: center;
+  font-weight: bold;
+}
+
+#seccion-cuatro img {
+  opacity: 0.9;
+}
+
+/*Codigo de Seccion footer*/
+
+footer {
+  background-color: #741112;
+  height: 70vh;
+}
+
+footer p {
+  color:#F8E5C1;
+  text-align: center;
+}
+
+.footer-logo img {
+  height: 175px;
+  width: 175px;
+}
+
+#iconos i {
+  font-size: 26px;
+  padding: 0 8px;
+  color: #F8E5C1;
+}
+
+#iconos i:hover {
+  font-size: 35px;
+  transition: all 0.2s ease-in;
+}
+
+
+
+
+@media (min-width: 576px) {
+  .card-group {
+    display: none;
+  }
+
+  .descripcion {
+    height: 45vh;
+  }
+  
+  .texto-mensaje p {
+    padding: 0 20%;
+  }
+  
+  .texto-mensaje p:nth-child(2) {
+    font-size: 2rem;
+  }
+
+  footer {
+    height: 40vh;
+  }
+}
+
+@media (min-width: 960px) {
+
+  .inicio .carousel {
+    display: none;
+  }
+
+  .inicio .card-group {
+    display: flex;
+  }
+
+  .card {
+    transition: 0.5s;
+  }
+
+  .inicio .card:hover {
+    filter: brightness(0.5);
+  }
+
+  .inicio .card .card-title{
+    position: absolute;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%); 
+
+    color: #F8E5C1;
+    font-size: 4.6rem;
+    opacity: 0;
+
+    transition: 0.5s;
+  }
+
+  .inicio .card:hover .card-title {
+    opacity: 1;
+  }
+
+  .inicio .card img {
+    height: 92vh;
+  }
+
+  .seccion-dos .info-texto {
+    padding-left: 5%;
+    padding-right: 75%;
+    color:aliceblue;
+  
+    font-size: 1.1rem;
+    transition: 1s;
+   }
+
+   .seccion-dos .info-texto:hover {
+    font-size: 1.12rem;
+   }
+
+   .seccion-tres .card-body {
+    font-size: 3.5rem;
+    color:#ffffff;
+    border: 0;
+    font-weight: bold;
+    
+   }
+  
+   .seccion-tres a {
+    color: aliceblue;
+    font-size: 1.9rem;
+    
+   }
+
+   #seccion-cuatro .carousel {
+    display: none;
+  }
+
+  #seccion-cuatro .card-group {
+    display: flex;
+  }
+
+  #seccion-cuatro .mensaje-listo {
+    position: absolute;
+    top: 350%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  
+    font-size: 4rem;
+    transition: 1s;
+  }
+
+  #seccion-cuatro .mensaje-listo:hover {
+    font-size: 4.2rem;
+  }
+
+}
