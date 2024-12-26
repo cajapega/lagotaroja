@@ -1,0 +1,11 @@
+{
+  "name": "lagotaroja",
+  "version": "2.0.0",
+  "scripts": {
+    "test": "echo \"Pruebas ejecutadas con exito\"",
+    "sass": "sass --watch scss:css"
+  },
+  "author": "Carlos J. Pérez",
+  "license": "MIT",
+  "description": ""
+}
