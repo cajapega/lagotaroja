@@ -1,0 +1,75 @@
+@use '../variables' as *;
+
+#header {
+    height: 75px;
+    width: 100%;
+    background-color: $white-color;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    position: fixed;
+    z-index: 5;
+    box-shadow: 0 15px 15px rgba(0, 0, 0, 0.1);
+    .logo {
+        padding-inline-start: 2%;
+
+        img {
+            height: auto;
+            width: 70px;
+        }
+    }
+
+    nav {
+        width: 25%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-inline-end: 2%;
+        .navLinks {   
+            position: fixed;
+            top: 75px;
+            left: 0;
+            height: 500px;
+            width: 100%;
+            background-color: $burnt-umber-color;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+
+            li {
+                
+                align-items: center;
+                justify-content: center;
+                font-size: 2.5rem;
+                a {
+                    color: $white-color;
+                    text-decoration: none;
+
+                    &:hover {
+                        text-decoration: underline;
+                        color: $champagne-pink-color;
+                    }
+                }
+            }
+
+        }
+        .socialMedia {
+            width: 50%;
+            display: flex;
+            justify-content: space-between;
+
+            a {
+                i {
+                    font-size: 1.5rem;
+                    color: $hunyadi-yellow-color;
+                }
+            }
+        }
+        .hamburger {
+            font-size: 2.5rem;
+
+        }
+    }
+
+}

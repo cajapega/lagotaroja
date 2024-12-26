@@ -1,0 +1,213 @@
+@charset "UTF-8";
+/*$primary-letter: 3.5rem;
+$second-letter: 2.5rem;
+$third-letter: 1.5rem;
+$paragraph: 1.5rem;*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/*Tiene un propósito específico para restablecer estilos y eliminar inconsistencias entre navegadores.*/
+/*Elimina márgenes rellenos y bordes por defecto, establece el tamaño de fuente al 100% y hereda la fuente del elemento padre.*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* Indica como comportarse a los elementos html5 en navegadores antiguos*/
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* Altura de línea consistente en toda la página.*/
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+/*Elimina las comillas por defecto que algunos navegadores añaden automáticamente a los elementos <blockquote> y <q>*/
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+/*Muestra las tables sin espaciado y con bordes colapsados para una presentación más consistente y predecible*/
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+#header {
+  height: 75px;
+  width: 100%;
+  background-color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  z-index: 5;
+  box-shadow: 0 15px 15px rgba(0, 0, 0, 0.1);
+}
+#header .logo {
+  padding-inline-start: 2%;
+}
+#header .logo img {
+  height: auto;
+  width: 70px;
+}
+#header nav {
+  width: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-inline-end: 2%;
+}
+#header nav .navLinks {
+  position: fixed;
+  top: 75px;
+  left: 0;
+  height: 500px;
+  width: 100%;
+  background-color: #7C3829;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+#header nav .navLinks li {
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+}
+#header nav .navLinks li a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+#header nav .navLinks li a:hover {
+  text-decoration: underline;
+  color: #F6DCCC;
+}
+#header nav .socialMedia {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+#header nav .socialMedia a i {
+  font-size: 1.5rem;
+  color: #EDAC3B;
+}
+#header nav .hamburger {
+  font-size: 2.5rem;
+}
+
+/* ==================== Efecto de Transparencia en imagen ==================== */
+.transparentOverlay {
+  position: relative;
+}
+
+.transparentOverlay::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  backdrop-filter: blur(4px) contrast(70%);
+  background: rgba(31, 78, 121, 0.1);
+  /*rgba(0, 0, 0, 0.4)*/
+  z-index: 0;
+  /* Overlay semitransparente */
+}
+
+/* ==================== Sección sfooter ==================== */
+.zoom {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.zoom:hover {
+  transform: scale(1.05);
+  /* Efecto de agrandamiento */
+}
+
+.zoom:active {
+  transform: scale(1);
+  /*Restaura tamaño original al hacer clic */
+}
+
+.sombraPronunciada {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  /* Sombra */
+}
+
+.sombraPronunciada:hover {
+  box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2);
+  /* Sombra más pronunciada */
+}
+
+.sombraPronunciada:active {
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
+  /*Sombra más pequeña */
+}
+
+.modernLightShadow {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#sPresentation {
+  width: 100%;
+}
+#sPresentation .presentation {
+  height: 70vh;
+  padding-block-start: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+#sPresentation .presentation p {
+  font-size: 1.5rem;
+}
+#sPresentation .presentation h1 {
+  font-size: 3.5rem;
+}
+#sPresentation .presentation img {
+  height: auto;
+  width: 300px;
+}
+
+#sBannerOne {
+  padding-inline: 8%;
+}
+#sBannerOne img {
+  height: auto;
+  width: 100%;
+}
+
+/*# sourceMappingURL=main.css.map */

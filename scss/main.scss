@@ -1,0 +1,44 @@
+//Archivos Base
+@use "mixins";
+@use "variables";
+@use "base/reset";
+@use "base/typography";
+@use "components/buttons";
+@use "components/cards";
+@use "layout/footer";
+@use "layout/header";
+@use "utilities/effects";
+
+
+#sPresentation {
+    width: 100%;
+    .presentation {
+        height: 70vh;
+        padding-block-start: 25%;
+        display: flex;
+        flex-direction:column;
+        align-items: center;
+        justify-content:space-around;
+
+        p {
+            font-size: 1.5rem;
+        }
+        h1 {
+            font-size: 3.5rem;
+
+        }
+        img {
+            height: auto;
+            width: 300px;
+        }
+    }
+} 
+
+#sBannerOne {
+
+    padding-inline: 8%;
+    img {
+        height: auto;
+        width: 100%;
+    }
+}
