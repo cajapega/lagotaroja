@@ -63,28 +63,20 @@
             width: 70%;
             display: flex;
             justify-content: space-between;
-            @include efectoZoomPresionado;
-
             a {
-                i {
-                    font-size: 1.5rem;
-                    color: $van-dyke;
-                }
-
+                font-size: 1.5rem;
+                color: $van-dyke;
+                @include efectoZoomPresionado;
                 &:hover {
-                    @include efectoZoomPresionado;
-                }
+                    color: $cornell-red-color;
 
-                &:active {
-                    @include efectoZoomPresionado;
                 }
-
             }
         }
 
         .hamburger {
             font-size: 2.5rem;
-            color: $blood-red;
+            color: $cornell-red-color;
             @include efectoZoomPresionado;
         }
     }
