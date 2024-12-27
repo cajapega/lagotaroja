@@ -1,8 +1,6 @@
 @charset "UTF-8";
-/*$primary-letter: 3.5rem;
-$second-letter: 2.5rem;
-$third-letter: 1.5rem;
-$paragraph: 1.5rem;*/
+/* ==================== Efecto de Transparencia en imagen ==================== */
+/* ==================== Sección sfooter ==================== */
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -64,7 +62,8 @@ table {
 
 #header {
   height: 75px;
-  width: 100%;
+  width: 100vw;
+  /*Con vw arregle el desbordamiento*/
   background-color: #FFFFFF;
   display: flex;
   align-items: center;
@@ -78,7 +77,7 @@ table {
 }
 #header .logo img {
   height: auto;
-  width: 70px;
+  width: 60px;
 }
 #header nav {
   width: 25%;
@@ -115,91 +114,74 @@ table {
   width: 50%;
   display: flex;
   justify-content: space-between;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 #header nav .socialMedia a i {
   font-size: 1.5rem;
-  color: #EDAC3B;
+  color: #483A41;
 }
-#header nav .hamburger {
-  font-size: 2.5rem;
-}
-
-/* ==================== Efecto de Transparencia en imagen ==================== */
-.transparentOverlay {
-  position: relative;
-}
-
-.transparentOverlay::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  backdrop-filter: blur(4px) contrast(70%);
-  background: rgba(31, 78, 121, 0.1);
-  /*rgba(0, 0, 0, 0.4)*/
-  z-index: 0;
-  /* Overlay semitransparente */
-}
-
-/* ==================== Sección sfooter ==================== */
-.zoom {
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.zoom:hover {
+#header nav .socialMedia a:hover {
   transform: scale(1.05);
   /* Efecto de agrandamiento */
 }
-
-.zoom:active {
+#header nav .socialMedia a:active {
   transform: scale(1);
   /*Restaura tamaño original al hacer clic */
 }
-
-.sombraPronunciada {
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-  /* Sombra */
-}
-
-.sombraPronunciada:hover {
-  box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2);
-  /* Sombra más pronunciada */
-}
-
-.sombraPronunciada:active {
-  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
-  /*Sombra más pequeña */
-}
-
-.modernLightShadow {
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+#header nav .hamburger {
+  font-size: 2.5rem;
+  color: #6E1411;
 }
 
 #sPresentation {
   width: 100%;
+  /*&::before {
+      @include transparentOverlay-before;
+  }*/
 }
 #sPresentation .presentation {
-  height: 70vh;
-  padding-block-start: 25%;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-}
-#sPresentation .presentation p {
-  font-size: 1.5rem;
-}
-#sPresentation .presentation h1 {
-  font-size: 3.5rem;
+  position: relative;
+  z-index: 3;
 }
 #sPresentation .presentation img {
-  height: auto;
-  width: 300px;
+  width: 100vw;
+  height: 100vh;
+  opacity: 0.3;
+}
+#sPresentation .presentation div {
+  padding-block-start: 15%;
+  height: 100%;
+  width: auto;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#sPresentation .presentation div p {
+  font-size: 1.5rem;
+  color: #483A41;
+  padding-block-end: 7%;
+}
+#sPresentation .presentation div h1 {
+  background: rgba(255, 255, 255, 0.5);
+  font-size: 3.5rem;
+  color: #A72F1E;
+  padding-inline: 5%;
+  padding-block: 10%;
+  text-align: center;
+  border-radius: 20%;
+  box-shadow: 0 2px 5px;
+}
+#sPresentation .presentation div img {
+  height: 42vh;
+  width: auto;
+  opacity: 1;
 }
 
 #sBannerOne {

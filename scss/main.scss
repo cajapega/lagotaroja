@@ -1,42 +1,89 @@
 //Archivos Base
-@use "mixins";
-@use "variables";
+@use "mixins" as *;
+@use "variables" as *;
 @use "base/reset";
 @use "base/typography";
 @use "components/buttons";
 @use "components/cards";
 @use "layout/footer";
 @use "layout/header";
-@use "utilities/effects";
 
 
 #sPresentation {
     width: 100%;
+
+    /*&::before {
+        @include transparentOverlay-before;
+    }*/
+
     .presentation {
-        height: 70vh;
-        padding-block-start: 25%;
+        height: 100vh;
         display: flex;
-        flex-direction:column;
+        flex-direction: column;
         align-items: center;
-        justify-content:space-around;
+        justify-content: space-around;
 
-        p {
-            font-size: 1.5rem;
-        }
-        h1 {
-            font-size: 3.5rem;
+        position: relative;
+        z-index: 3;
 
-        }
         img {
-            height: auto;
-            width: 300px;
+            width: 100vw;
+            height: 100vh;
+            opacity: 0.3;
         }
+
+        div {
+            padding-block-start: 15%;
+            height: 100%;
+            width: auto;
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            p {
+                font-size: $paragraph;
+                color: $van-dyke;
+                padding-block-end: 7%;
+            }
+    
+            h1 {
+                background: rgba(255, 255, 255, 0.5);
+                font-size: $primary-letter;
+                color: $cornell-red-color;
+                padding-inline: 5%;
+                padding-block: 10%;
+                text-align: center;
+                border-radius: 20%;
+                box-shadow: 0 2px 5px;
+            }
+            
+            img {
+                height: 42vh;
+                width: auto;
+                opacity: 1;
+            }
+
+        }
+
+
     }
-} 
+}
+
+#sSmile {
+    h2 {
+
+    }
+    p {
+
+    }
+}
 
 #sBannerOne {
 
     padding-inline: 8%;
+
     img {
         height: auto;
         width: 100%;

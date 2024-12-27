@@ -1,8 +1,10 @@
 @use '../variables' as *;
+@use '../mixins' as *;
 
 #header {
     height: 75px;
-    width: 100%;
+    width: 100vw;
+    /*Con vw arregle el desbordamiento*/
     background-color: $white-color;
     display: flex;
     align-items: center;
@@ -11,12 +13,13 @@
     position: fixed;
     z-index: 5;
     box-shadow: 0 15px 15px rgba(0, 0, 0, 0.1);
+
     .logo {
         padding-inline-start: 2%;
 
         img {
             height: auto;
-            width: 70px;
+            width: 60px;
         }
     }
 
@@ -26,7 +29,8 @@
         align-items: center;
         justify-content: space-between;
         padding-inline-end: 2%;
-        .navLinks {   
+
+        .navLinks {
             position: fixed;
             top: 75px;
             left: 0;
@@ -36,11 +40,13 @@
             display: flex;
             align-items: center;
             justify-content: space-around;
+
             li {
-                
+
                 align-items: center;
                 justify-content: center;
                 font-size: 2.5rem;
+
                 a {
                     color: $white-color;
                     text-decoration: none;
@@ -53,22 +59,33 @@
             }
 
         }
+
         .socialMedia {
             width: 50%;
             display: flex;
             justify-content: space-between;
+            @include zoom;
 
             a {
                 i {
                     font-size: 1.5rem;
-                    color: $hunyadi-yellow-color;
+                    color: $van-dyke;
                 }
+
+                &:hover {
+                    @include zoom-hover;
+                }
+
+                &:active {
+                    @include zoom-active;
+                }
+
             }
         }
+
         .hamburger {
             font-size: 2.5rem;
-
+            color: $blood-red;
         }
     }
-
 }

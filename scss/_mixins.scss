@@ -1,0 +1,55 @@
+/* ==================== Efecto de Transparencia en imagen ==================== */
+@mixin transparentOverlay {
+    position: relative;
+}
+
+@mixin transparentOverlay-before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    backdrop-filter: blur(1px) contrast(70%);
+    background: rgba(255, 255, 255, 0.0);
+    /*rgba(0, 0, 0, 0.4)*/
+    z-index: 0;
+    /* Overlay semitransparente */
+}
+
+/* ==================== Sección sfooter ==================== */
+@mixin zoom {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+@mixin zoom-hover {
+    transform: scale(1.05);
+    /* Efecto de agrandamiento */
+}
+
+@mixin zoom-active {
+    transform: scale(1);
+    /*Restaura tamaño original al hacer clic */
+}
+
+@mixin sombraPronunciada {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    /* Sombra */
+}
+
+@mixin sombraPronunciada-hover {
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2);
+    /* Sombra más pronunciada */
+}
+
+@mixin sombraPronunciada-active {
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
+    /*Sombra más pequeña */
+}
+
+@mixin modernLightShadow-active {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
