@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/* ==================== Efecto de Transparencia en imagen ==================== */
+/* ==================== Efecto de Etiqueta Strong ==================== */
 /* ==================== Efecto de Zoom ==================== */
 /* ==================== Efecto de Sombra en Cards ==================== */
 /* http://meyerweb.com/eric/tools/css/reset/ 
@@ -396,6 +396,9 @@ table {
   text-align: center;
   color: #FFFFFF;
   line-height: 1.4;
+}
+#sClients p strong {
+  font-weight: bold;
 }
 
 /*# sourceMappingURL=main.css.map */

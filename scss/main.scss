@@ -44,10 +44,7 @@
                 padding-block-end: 7%;
                 text-align: center;
                 line-height: 1.4;
-
-                strong {
-                    font-weight: bold;
-                }
+                @include etiquetaStrong;
             }
     
             h1 {
@@ -88,9 +85,7 @@
         font-size: $paragraph;
         text-align: justify;
         line-height: 1.4;
-        strong {
-            font-weight: bold;
-        }
+        @include etiquetaStrong;
     }
 }
 
@@ -135,9 +130,7 @@
             text-align: justify;
             color: $white-color;
             line-height: 1.4;
-            strong {
-                font-weight: bold;
-            }
+            @include etiquetaStrong;
         }
     }
     img {
@@ -177,9 +170,7 @@
             text-align: justify;
             color: $van-dyke;
             line-height: 1.4;
-            strong {
-                font-weight: bold;
-            }
+            @include etiquetaStrong;
         }
     }
 }
@@ -216,7 +207,7 @@
         text-align: center;
         color: $white-color;
         line-height: 1.4;
-
+        @include etiquetaStrong;
     }
 }
 

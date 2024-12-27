@@ -1,6 +1,8 @@
-/* ==================== Efecto de Transparencia en imagen ==================== */
-@mixin transparentOverlay {
-    position: relative;
+/* ==================== Efecto de Etiqueta Strong ==================== */
+@mixin etiquetaStrong {
+    strong {
+        font-weight: bold;
+    }
 }
 
 /* ==================== Efecto de Zoom ==================== */
