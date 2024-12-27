@@ -190,16 +190,53 @@ table {
   opacity: 1;
 }
 
+#sSmile {
+  min-height: 65vh;
+  padding-inline: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #FFFFFF;
+}
+#sSmile h2 {
+  font-size: 2.5rem;
+  color: #7C3829;
+}
+#sSmile p {
+  font-size: 1.5rem;
+  text-align: justify;
+  line-height: 1.2;
+}
+
 #sBannerOne {
-  padding-block: 10%;
-  padding-inline: 0%;
+  padding-inline: 2%;
 }
 #sBannerOne img {
   height: auto;
   width: 100%;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-  /* Sombra */
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#sKnow {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+#sKnow div {
+  display: flex;
+}
+#sKnow div h2 {
+  font-size: 2.5rem;
+  text-orientation: upright;
+  writing-mode: vertical-lr;
+}
+#sKnow div p {
+  font-size: 1.5rem;
 }
 
 /*# sourceMappingURL=main.css.map */

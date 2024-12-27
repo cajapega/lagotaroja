@@ -75,21 +75,55 @@
 }
 
 #sSmile {
+    min-height: 65vh;
+    padding-inline: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: $white-color;
     h2 {
-        
+        font-size: $second-letter;
+        color: $burnt-umber-color;
     }
-    p {
-
+    p { 
+        font-size: $paragraph;
+        text-align: justify;
+        line-height: 1.2;
     }
 }
 
 #sBannerOne {
-    padding-block: 10%;
-    padding-inline: 0%;
+    padding-inline: 2%;
 
     img {
         height: auto;
         width: 100%;
-        @include sombraPronunciada;
+        @include modernLightShadow-active
+    }
+}
+
+#sKnow {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    div {
+        display: flex;
+
+        h2 {
+            font-size: $second-letter;
+            text-orientation: upright;
+            writing-mode: vertical-lr;
+            
+        }
+        p {
+            font-size: $paragraph;
+
+        }
+    }
+    img {
+
     }
 }
