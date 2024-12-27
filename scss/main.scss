@@ -97,13 +97,7 @@
         height: auto;
         width: 95%;
         @include modernLightShadow;
-        @include zoom;
-        &:hover {
-            @include zoom-hover;
-        } 
-        &:active {
-            @include zoom-active;
-        }
+        @include efectoZoomPresionado;
     }
 }
 
@@ -148,13 +142,7 @@
     img {
         width: 75%;
         border-radius: 100%;
-        @include zoom;
-        &:hover {
-            @include zoom-hover;
-        } 
-        &:active {
-            @include zoom-active;
-        }
+        @include efectoZoomPresionado;
     }
     div {
         width: 80%;
@@ -200,6 +188,7 @@
     justify-content: center;
     img {
         width: 70%;
+        @include efectoZoomPresionado;
     }
     p {
         width: 80%;

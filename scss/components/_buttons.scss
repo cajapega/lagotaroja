@@ -12,12 +12,5 @@
     background-color: $white-color;
     font-size: 1.8rem;
     color: $van-dyke;
-    @include zoom;
-
-    &:hover {
-        @include zoom-hover;
-    }
-    &:active {
-        @include zoom-active
-    }
+    @include efectoZoomPresionado;
 }

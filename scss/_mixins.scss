@@ -2,23 +2,19 @@
 @mixin etiquetaStrong {
     strong {
         font-weight: bold;
+        font-size: 1.75rem;
     }
 }
 
 /* ==================== Efecto de Zoom ==================== */
-
-@mixin zoom {
+@mixin efectoZoomPresionado {
     transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-@mixin zoom-hover {
-    transform: scale(1.05);
-    /* Efecto de agrandamiento */
-}
-
-@mixin zoom-active {
-    transform: scale(1);
-    /*Cuando se tiene presionado el boton vuelve a su tamano*/
+    &:hover {
+        transform: scale(1.05);
+    }
+    &:active {
+        transform: scale(1);
+    }
 }
 
 /* ==================== Efecto de Sombra en Cards ==================== */
