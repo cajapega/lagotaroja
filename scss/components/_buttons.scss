@@ -1,0 +1,23 @@
+@use '../variables' as *;
+@use '../mixins' as *;
+
+.btnGeneric {
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.btnContact {
+    background-color: $white-color;
+    font-size: 1.8rem;
+    color: $van-dyke;
+    @include zoom;
+
+    &:hover {
+        @include zoom-hover;
+    }
+    &:active {
+        @include zoom-active
+    }
+}
