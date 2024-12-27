@@ -24,7 +24,7 @@
     }
 
     nav {
-        width: 25%;
+        width: 40%;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -62,7 +62,7 @@
         }
 
         .socialMedia {
-            width: 50%;
+            width: 70%;
             display: flex;
             justify-content: space-between;
             @include zoom;
@@ -87,6 +87,11 @@
         .hamburger {
             font-size: 2.5rem;
             color: $blood-red;
+            @include zoom;
+            &:hover {
+                @include zoom-hover;
+
+            }
         }
     }
 }

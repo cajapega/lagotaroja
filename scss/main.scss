@@ -71,22 +71,26 @@
 }
 
 #sSmile {
-    min-height: 65vh;
     margin-block: 10%;
     padding-inline: 10%;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     background-color: $white-color;
     h2 {
+        padding-block-end: 10%;
         font-size: $second-letter;
         color: $burnt-umber-color;
+        text-align: center;
     }
     p { 
         font-size: $paragraph;
         text-align: justify;
         line-height: 1.2;
+        strong {
+            font-weight: bold;
+        }
     }
 }
 
@@ -117,6 +121,7 @@
         h2 {
             font-size: $second-letter;
             color: $champagne-pink-color;
+            font-weight: bold;
             
         }
         p {
@@ -137,16 +142,40 @@
 }
 
 #sBannerTwo {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
     img {
-        width: 80%;
+        width: 75%;
         border-radius: 100%;
     }
     div {
+        width: 80%;
         h2 {
-
+            font-size: $second-letter;
+            color: $van-dyke;
+            font-weight: bold;
+            text-align: center;
+            padding-block: 10%;
         }
         p {
-
+            font-size: $paragraph;
+            text-align: justify;
+            color: $van-dyke;
         }
     }
 }
+
+#sGotas {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+
+    justify-items: center;
+    justify-content: center;
+}
+
+
+

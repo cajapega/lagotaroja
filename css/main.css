@@ -103,7 +103,7 @@ table {
   width: 60px;
 }
 #header nav {
-  width: 25%;
+  width: 40%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -134,7 +134,7 @@ table {
   color: #F6DCCC;
 }
 #header nav .socialMedia {
-  width: 50%;
+  width: 70%;
   display: flex;
   justify-content: space-between;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
@@ -154,6 +154,11 @@ table {
 #header nav .hamburger {
   font-size: 2.5rem;
   color: #6E1411;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+#header nav .hamburger:hover {
+  transform: scale(1.05);
+  /* Efecto de agrandamiento */
 }
 
 #sPresentation {
@@ -210,23 +215,27 @@ table {
 }
 
 #sSmile {
-  min-height: 65vh;
   margin-block: 10%;
   padding-inline: 10%;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   background-color: #FFFFFF;
 }
 #sSmile h2 {
+  padding-block-end: 10%;
   font-size: 2.5rem;
   color: #7C3829;
+  text-align: center;
 }
 #sSmile p {
   font-size: 1.5rem;
   text-align: justify;
   line-height: 1.2;
+}
+#sSmile p strong {
+  font-weight: bold;
 }
 
 #sBannerOne {
@@ -259,6 +268,7 @@ table {
 #sKnow div h2 {
   font-size: 2.5rem;
   color: #F6DCCC;
+  font-weight: bold;
 }
 #sKnow div p {
   max-width: 80%;
@@ -274,9 +284,39 @@ table {
   display: none;
 }
 
+#sBannerTwo {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
 #sBannerTwo img {
-  width: 80%;
+  width: 75%;
   border-radius: 100%;
+}
+#sBannerTwo div {
+  width: 80%;
+}
+#sBannerTwo div h2 {
+  font-size: 2.5rem;
+  color: #483A41;
+  font-weight: bold;
+  text-align: center;
+  padding-block: 10%;
+}
+#sBannerTwo div p {
+  font-size: 1.5rem;
+  text-align: justify;
+  color: #483A41;
+}
+
+#sGotas {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  justify-content: center;
 }
 
 /*# sourceMappingURL=main.css.map */
