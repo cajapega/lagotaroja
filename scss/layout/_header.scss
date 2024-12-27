@@ -31,14 +31,15 @@
         padding-inline-end: 2%;
 
         .navLinks {
+            display: none;
             position: fixed;
             top: 75px;
             left: 0;
             height: 93vh;
             width: 100%;
             background-color: $burnt-umber-color;
-            display: flex;
-            align-items: center;
+            
+            align-items: center; /*Actua cuando el js cambia la propiedad display*/
             justify-content: space-around;
 
             li {
