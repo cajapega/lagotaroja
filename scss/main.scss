@@ -100,7 +100,7 @@
     img {
         height: auto;
         width: 100%;
-        @include modernLightShadow-active
+        @include modernLightShadow
     }
 }
 
@@ -169,12 +169,50 @@
 }
 
 #sGotas {
+    margin-block: 10%;
     height: auto;
     display: flex;
     flex-direction: column;
 
-    justify-items: center;
-    justify-content: center;
+    h2 {
+        color: $van-dyke;
+        text-align: center;
+        font-weight: bold;
+        font-size: $second-letter;
+        padding-block-end: 10%;
+    }
+
+    .cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+
+        .card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding-block: 3%;
+            width: 90vw;
+            @include modernLightShadow;
+            @include zoom;
+            &:hover {
+                @include zoom-hover;
+            }
+            &:active {
+                @include zoom-active;
+            }
+            .cardImg {
+                height: auto;
+                width: 80vw;
+            }
+        }
+    }
+
+
+
 }
 
 
