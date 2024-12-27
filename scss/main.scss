@@ -42,10 +42,16 @@
             align-items: center;
             justify-content: center;
 
-            p {
-                font-size: $paragraph;
+            h2 {
+                font-size: $second-letter;
                 color: $van-dyke;
                 padding-block-end: 7%;
+                text-align: center;
+                line-height: 1.4;
+
+                strong {
+                    font-weight: bold;
+                }
             }
     
             h1 {
@@ -58,7 +64,6 @@
                 border-radius: 20%;
                 box-shadow: 0 2px 5px;
             }
-            
             img {
                 height: 42vh;
                 width: auto;
@@ -66,14 +71,12 @@
             }
 
         }
-
-
     }
 }
 
 #sSmile {
     h2 {
-
+        
     }
     p {
 
@@ -81,11 +84,12 @@
 }
 
 #sBannerOne {
-
-    padding-inline: 8%;
+    padding-block: 10%;
+    padding-inline: 0%;
 
     img {
         height: auto;
         width: 100%;
+        @include sombraPronunciada;
     }
 }
