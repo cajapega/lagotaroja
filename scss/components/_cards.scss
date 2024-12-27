@@ -1,0 +1,30 @@
+@use "../mixins" as *;
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-block: 3%;
+        width: 90vw;
+        @include modernLightShadow;
+        @include zoom;
+        &:hover {
+            @include zoom-hover;
+        }
+        &:active {
+            @include zoom-active;
+        }
+        .cardImg {
+            height: auto;
+            width: 80vw;
+        }
+    }
+}
