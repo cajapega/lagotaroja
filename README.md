@@ -1,6 +1,6 @@
 # Sangría La Gota Roja
 
-Sitio web creado en **HTML5** y estilos gestionados con **SCSS**, diseñado para promover y presentar las deliciosas sangrías embotelladas de "La Gota Roja".
+Sitio web creado en **HTML5** y estilos gestionados con **SCSS**, diseñado para promover y presentar las sangrías embotelladas de "La Gota Roja".
 
 ## Características
 
@@ -8,7 +8,7 @@ Sitio web creado en **HTML5** y estilos gestionados con **SCSS**, diseñado para
 - **Metadatos y SEO:** Incluye metadatos optimizados, como descripciones y etiquetas Open Graph para redes sociales.
 - **Animaciones:** Uso de la librería [AOS](https://michalsnik.github.io/aos/) para animaciones atractivas.
 - **Schema Markup:** Implementación de JSON-LD para mejorar la visibilidad en motores de búsqueda.
-- **Elementos visuales:** Integración de imágenes de alta calidad y diseños artesanales para una experiencia inmersiva.
+- **Elementos visuales:** Integración de imágenes 
 
 ## Tecnologías Utilizadas
 
@@ -39,13 +39,8 @@ Sitio web creado en **HTML5** y estilos gestionados con **SCSS**, diseñado para
 - [AOS](https://michalsnik.github.io/aos/): Animaciones.
 - [Bootstrap Icons](https://icons.getbootstrap.com/): Iconos.
 
-## Capturas de Pantalla
-
 ### Presentación Principal
-![Sangría Artesanal](assets/images/products/gr-5.jpg)
-
-### Conócenos
-![Conócenos](assets/images/products/gr-bolso-remove.png)
+![Sangría Artesanal](assets/images/others/Screenshot.png)
 
 ## Autoría
 
