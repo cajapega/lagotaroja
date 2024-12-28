@@ -1,0 +1,33 @@
+@use "../mixins" as *;
+@use "../variables" as *;
+
+#sfooter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-inline: 10%;
+    padding-block: 10%;
+    img {
+        width: 70%;
+    }
+
+    p { /*Esto aplica a todas las etiquetas en sFooter*/
+        padding-block: 5%;
+        font-size: $paragraph;
+        line-height: 1.4;
+    }
+    .containerIcon {
+        width: 65%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        a {
+            text-align: center;
+            padding-block: 5%;
+            font-size: 3.5rem;
+            color: $van-dyke;
+        }
+        
+    }
+}

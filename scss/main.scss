@@ -3,11 +3,10 @@
 @use "variables" as *;
 @use "base/reset";
 @use "base/typography";
-@use "components/buttons";
-@use "components/cards";
 @use "layout/footer";
 @use "layout/header";
-
+@use "components/buttons";
+@use "components/cards";
 
 #sPresentation {
     width: 100%;

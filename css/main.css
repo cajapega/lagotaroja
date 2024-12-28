@@ -61,54 +61,33 @@ table {
   border-spacing: 0;
 }
 
-.btnGeneric {
-  border: none;
-  padding: 10px 20px;
-  border-radius: 25px;
-  cursor: pointer;
+#sfooter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-inline: 10%;
+  padding-block: 10%;
 }
-
-.btnContact {
-  background-color: #FFFFFF;
-  font-size: 1.8rem;
+#sfooter img {
+  width: 70%;
+}
+#sfooter p { /*Esto aplica a todas las etiquetas en sFooter*/
+  padding-block: 5%;
+  font-size: 1.5rem;
+  line-height: 1.4;
+}
+#sfooter .containerIcon {
+  width: 65%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#sfooter .containerIcon a {
+  text-align: center;
+  padding-block: 5%;
+  font-size: 3.5rem;
   color: #483A41;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-.btnContact:hover {
-  transform: scale(1.05);
-}
-.btnContact:active {
-  transform: scale(1);
-}
-
-.cards {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 30px;
-}
-.cards .card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding-block: 3%;
-  width: 90vw;
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-.cards .card:hover {
-  transform: scale(1.05);
-}
-.cards .card:active {
-  transform: scale(1);
-}
-.cards .card .cardImg {
-  height: auto;
-  width: 80vw;
 }
 
 #header {
@@ -190,6 +169,56 @@ table {
 }
 #header nav .hamburger:active {
   transform: scale(1);
+}
+
+.btnGeneric {
+  border: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.btnContact {
+  background-color: #FFFFFF;
+  font-size: 1.8rem;
+  color: #483A41;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.btnContact:hover {
+  transform: scale(1.05);
+}
+.btnContact:active {
+  transform: scale(1);
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+.cards .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-block: 3%;
+  width: 90vw;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.cards .card:hover {
+  transform: scale(1.05);
+}
+.cards .card:active {
+  transform: scale(1);
+}
+.cards .card .cardImg {
+  height: auto;
+  width: 80vw;
 }
 
 #sPresentation {
