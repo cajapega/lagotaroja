@@ -25,12 +25,14 @@ Sitio web creado en **HTML5** y estilos gestionados con **SCSS**, diseñado para
 │   ├── images
 │   └── styles
 ├── css
+├── scss
 ├── js
 └── index.html
 ```
 
 - **assets:** Contiene los recursos multimedia como imágenes, íconos y hojas de estilo.
 - **css:** Estilos generados a partir de SCSS.
+- **scss:** Preprocesador de estilos SCSS
 - **js:** Archivos JavaScript para funcionalidades interactivas.
 - **index.html:** Archivo principal del proyecto.
 
