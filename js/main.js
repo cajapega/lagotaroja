@@ -34,3 +34,20 @@ document.addEventListener("DOMContentLoaded", function () {
         })
         .catch(error => console.error('Error al cargar el header:', error));
 });
+
+document.addEventListener('DOMContentLoaded', function () {
+    const imgElement = document.querySelector('#sPresentation .presentation img');
+    
+    function updateImage() {
+        if (window.innerWidth > 768) {
+            imgElement.src = 'assets/images/products/gr-bolso.jpg'; 
+        } else {
+            imgElement.src = 'assets/images/products/gr-5.jpg'; 
+        }
+    }
+
+    // Llamar la función al cargar la página y al redimensionar
+    updateImage();
+    window.addEventListener('resize', updateImage);
+});
+
