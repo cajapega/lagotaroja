@@ -7,6 +7,10 @@
     justify-content: center;
     gap: 30px;
 
+    @include for-large-screens {
+        flex-direction: row;
+    }
+
     .card {
         display: flex;
         flex-direction: column;
@@ -19,6 +23,15 @@
         .cardImg {
             height: auto;
             width: 80vw;
+
+            @include for-large-screens {
+                width: 90%;
+            }
+        }
+
+        @include for-large-screens {
+            padding-block: 1%;
+            width: 30%;
         }
     }
 }

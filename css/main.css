@@ -213,6 +213,11 @@ table {
   justify-content: center;
   gap: 30px;
 }
+@media (min-width: 768px) {
+  .cards {
+    flex-direction: row;
+  }
+}
 .cards .card {
   display: flex;
   flex-direction: column;
@@ -234,6 +239,17 @@ table {
 .cards .card .cardImg {
   height: auto;
   width: 80vw;
+}
+@media (min-width: 768px) {
+  .cards .card .cardImg {
+    width: 90%;
+  }
+}
+@media (min-width: 768px) {
+  .cards .card {
+    padding-block: 1%;
+    width: 30%;
+  }
 }
 
 #sPresentation {
