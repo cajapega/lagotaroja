@@ -51,3 +51,10 @@ document.addEventListener('DOMContentLoaded', function () {
     window.addEventListener('resize', updateImage);
 });
 
+function BTNHablemos() {
+    const enlace = document.createElement('a');
+    enlace.href = 'https://api.whatsapp.com/send?phone=593963692598';
+    enlace.click();
+}
+
+

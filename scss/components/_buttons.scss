@@ -3,14 +3,15 @@
 
 .btnGeneric {
     border: none;
-    padding: 10px 20px;
+    padding: 15px 25px;
     border-radius: 25px;
     cursor: pointer;
 }
 
 .btnContact {
     background-color: $white-color;
-    font-size: 1.8rem;
+    font-size: 2rem;
     color: $van-dyke;
     @include efectoZoomPresionado;
+    @include sombraPronunciada;
 }
