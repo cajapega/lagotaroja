@@ -1,3 +1,5 @@
+@use "mixins" as *;
+
 $white-color: #FFFFFF;
 $blood-red: #6E1411;
 $burgundy-color: #801B24;
@@ -11,10 +13,23 @@ $hunyadi-yellow-color: #EDAC3B;
 $sunset-color: #EEC184;
 $champagne-pink-color: #F6DCCC;
 
-$primary-letter: 3.5rem;
-$second-letter: 2.5rem;
+$primary-letter: (
+    small: 3.5rem, 
+    large: 5.5rem
+);
+$second-letter: (
+    small: 2.5rem,
+    large: 4rem,
+);
 $third-letter: 1.5rem;
 $paragraph: 1.5rem;
+
+@include for-large-screens {
+    $primary-letter: 8rem;
+    $second-letter: 2.5rem;
+    $third-letter: 1.8rem;
+    $paragraph: 1.5rem;           
+}
 
 
 

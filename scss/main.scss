@@ -37,24 +37,35 @@
             align-items: center;
             justify-content: center;
 
+            @include for-large-screens {
+                padding-block-start: 5%;
+            }
+
             h2 {
-                font-size: $second-letter;
+                font-size: map-get($second-letter, small);
                 color: $van-dyke;
                 padding-block-end: 7%;
                 text-align: center;
                 line-height: 1.4;
                 @include etiquetaStrong;
+                @include for-large-screens {
+                    font-size: map-get($second-letter, large);
+                }
             }
     
             h1 {
                 background: rgba(255, 255, 255, 0.5);
-                font-size: $primary-letter;
+                font-size: map-get($primary-letter, small);
                 color: $cornell-red-color;
                 padding-inline: 5%;
                 padding-block: 10%;
                 text-align: center;
                 border-radius: 20%;
                 box-shadow: 0 2px 5px;
+
+                @include for-large-screens {
+                    font-size: map-get($primary-letter, large);
+                }
             }
             img {
                 height: 42vh;
@@ -74,11 +85,19 @@
     justify-content: center;
     align-items: center;
     background-color: $white-color;
+
+    @include for-large-screens {
+        margin-block: 5%;
+        padding-inline: 30%;
+    }
     h2 {
         padding-block-end: 10%;
-        font-size: $second-letter;
+        font-size: map-get($second-letter, small);
         color: $burnt-umber-color;
         text-align: center;
+        @include for-large-screens {
+            font-size: map-get($second-letter, large);
+        }
     }
     p { 
         font-size: $paragraph;
@@ -104,16 +123,28 @@
     margin-block: 15%;
     height: auto;
     background-color: $cornell-red-color;
+    @include for-large-screens {
+        margin-block: 7%;
+    }
     div {
         padding-block: 15%;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: space-around;
+
+        @include for-large-screens {
+            padding-block: 3%;
+            flex-direction: column;
+        }
+
         h2 {
-            font-size: $second-letter;
+            font-size: map-get($second-letter, small);
             color: $champagne-pink-color;
             font-weight: bold;
+            @include for-large-screens {
+                font-size: map-get($second-letter, large);
+            }
             
         }
         p {
@@ -124,6 +155,10 @@
             color: $white-color;
             line-height: 1.4;
             @include etiquetaStrong;
+
+            @include for-large-screens {
+                padding-block: 2%;
+            }
         }
     }
     img {
@@ -142,15 +177,25 @@
         width: 75%;
         border-radius: 100%;
         @include efectoZoomPresionado;
+
+        @include for-large-screens {
+            width: 25%;
+        }
     }
     div {
         width: 80%;
+        @include for-large-screens {
+            width: 60%;
+        }
         h2 {
-            font-size: $second-letter;
+            font-size: map-get($second-letter, small);
             color: $van-dyke;
             font-weight: bold;
             text-align: center;
             padding-block: 10%;
+            @include for-large-screens {
+                font-size: map-get($second-letter, large);
+            }
         }
         p {
             font-size: $paragraph;
@@ -168,12 +213,18 @@
     display: flex;
     flex-direction: column;
 
+    @include for-large-screens {
+        margin-block: 7%;         
+    }
     h2 {
         color: $van-dyke;
         text-align: center;
         font-weight: bold;
-        font-size: $second-letter;
+        font-size: map-get($second-letter, small);
         padding-block-end: 10%;
+        @include for-large-screens {
+            font-size: map-get($second-letter, large);
+        }
     }
 }
 

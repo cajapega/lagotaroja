@@ -263,6 +263,11 @@ table {
   align-items: center;
   justify-content: center;
 }
+@media (min-width: 768px) {
+  #sPresentation .presentation div {
+    padding-block-start: 5%;
+  }
+}
 #sPresentation .presentation div h2 {
   font-size: 2.5rem;
   color: #483A41;
@@ -274,6 +279,11 @@ table {
   font-weight: bold;
   font-size: 1.75rem;
 }
+@media (min-width: 768px) {
+  #sPresentation .presentation div h2 {
+    font-size: 4rem;
+  }
+}
 #sPresentation .presentation div h1 {
   background: rgba(255, 255, 255, 0.5);
   font-size: 3.5rem;
@@ -283,6 +293,11 @@ table {
   text-align: center;
   border-radius: 20%;
   box-shadow: 0 2px 5px;
+}
+@media (min-width: 768px) {
+  #sPresentation .presentation div h1 {
+    font-size: 5.5rem;
+  }
 }
 #sPresentation .presentation div img {
   height: 42vh;
@@ -299,11 +314,22 @@ table {
   align-items: center;
   background-color: #FFFFFF;
 }
+@media (min-width: 768px) {
+  #sSmile {
+    margin-block: 5%;
+    padding-inline: 30%;
+  }
+}
 #sSmile h2 {
   padding-block-end: 10%;
   font-size: 2.5rem;
   color: #7C3829;
   text-align: center;
+}
+@media (min-width: 768px) {
+  #sSmile h2 {
+    font-size: 4rem;
+  }
 }
 #sSmile p {
   font-size: 1.5rem;
@@ -340,6 +366,11 @@ table {
   height: auto;
   background-color: #A72F1E;
 }
+@media (min-width: 768px) {
+  #sKnow {
+    margin-block: 7%;
+  }
+}
 #sKnow div {
   padding-block: 15%;
   display: flex;
@@ -347,10 +378,21 @@ table {
   align-items: center;
   justify-content: space-around;
 }
+@media (min-width: 768px) {
+  #sKnow div {
+    padding-block: 3%;
+    flex-direction: column;
+  }
+}
 #sKnow div h2 {
   font-size: 2.5rem;
   color: #F6DCCC;
   font-weight: bold;
+}
+@media (min-width: 768px) {
+  #sKnow div h2 {
+    font-size: 4rem;
+  }
 }
 #sKnow div p {
   padding-block: 10%;
@@ -363,6 +405,11 @@ table {
 #sKnow div p strong {
   font-weight: bold;
   font-size: 1.75rem;
+}
+@media (min-width: 768px) {
+  #sKnow div p {
+    padding-block: 2%;
+  }
 }
 #sKnow img {
   display: none;
@@ -386,8 +433,18 @@ table {
 #sBannerTwo img:active {
   transform: scale(1);
 }
+@media (min-width: 768px) {
+  #sBannerTwo img {
+    width: 25%;
+  }
+}
 #sBannerTwo div {
   width: 80%;
+}
+@media (min-width: 768px) {
+  #sBannerTwo div {
+    width: 60%;
+  }
 }
 #sBannerTwo div h2 {
   font-size: 2.5rem;
@@ -395,6 +452,11 @@ table {
   font-weight: bold;
   text-align: center;
   padding-block: 10%;
+}
+@media (min-width: 768px) {
+  #sBannerTwo div h2 {
+    font-size: 4rem;
+  }
 }
 #sBannerTwo div p {
   font-size: 1.5rem;
@@ -413,12 +475,22 @@ table {
   display: flex;
   flex-direction: column;
 }
+@media (min-width: 768px) {
+  #sGotas {
+    margin-block: 7%;
+  }
+}
 #sGotas h2 {
   color: #483A41;
   text-align: center;
   font-weight: bold;
   font-size: 2.5rem;
   padding-block-end: 10%;
+}
+@media (min-width: 768px) {
+  #sGotas h2 {
+    font-size: 4rem;
+  }
 }
 
 #sClients {
