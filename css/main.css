@@ -76,6 +76,13 @@ table {
 }
 #sfooter img {
   width: 70%;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+#sfooter img:hover {
+  transform: scale(1.05);
+}
+#sfooter img:active {
+  transform: scale(1);
 }
 @media (min-width: 768px) {
   #sfooter img {
@@ -103,6 +110,16 @@ table {
   padding-block: 5%;
   font-size: 3.5rem;
   color: #483A41;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+#sfooter .containerIcon a:hover {
+  transform: scale(1.05);
+}
+#sfooter .containerIcon a:active {
+  transform: scale(1);
+}
+#sfooter .containerIcon a:hover {
+  color: #A72F1E;
 }
 
 #header {

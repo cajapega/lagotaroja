@@ -13,6 +13,7 @@
     }
     img {
         width: 70%;
+        @include efectoZoomPresionado;
         @include for-large-screens {
             width: 20%;
         }
@@ -36,6 +37,12 @@
             padding-block: 5%;
             font-size: 3.5rem;
             color: $van-dyke;
+
+            @include efectoZoomPresionado;
+            &:hover {
+                color: $cornell-red-color;
+
+            }
         }
         
     }
