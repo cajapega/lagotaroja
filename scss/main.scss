@@ -236,9 +236,18 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    @include for-large-screens {
+        padding-block: 5%;
+        padding-inline: 10%;
+        flex-direction: row;
+    }
     img {
         width: 70%;
         @include efectoZoomPresionado;
+
+        @include for-large-screens {
+            width: 30%;
+        }
     }
     p {
         width: 80%;
@@ -247,6 +256,9 @@
         color: $white-color;
         line-height: 1.4;
         @include etiquetaStrong;
+        @include for-large-screens {
+            width: 40%;
+        }
     }
 }
 

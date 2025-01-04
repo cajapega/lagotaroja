@@ -69,13 +69,28 @@ table {
   padding-inline: 10%;
   padding-block: 10%;
 }
+@media (min-width: 768px) {
+  #sfooter {
+    padding-block: 7%;
+  }
+}
 #sfooter img {
   width: 70%;
+}
+@media (min-width: 768px) {
+  #sfooter img {
+    width: 20%;
+  }
 }
 #sfooter p { /*Esto aplica a todas las etiquetas en sFooter*/
   padding-block: 5%;
   font-size: 1.5rem;
   line-height: 1.4;
+}
+@media (min-width: 768px) {
+  #sfooter p {
+    padding-block: 3%;
+  }
 }
 #sfooter .containerIcon {
   width: 65%;
@@ -518,6 +533,13 @@ table {
   align-items: center;
   justify-content: center;
 }
+@media (min-width: 768px) {
+  #sClients {
+    padding-block: 5%;
+    padding-inline: 10%;
+    flex-direction: row;
+  }
+}
 #sClients img {
   width: 70%;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
@@ -527,6 +549,11 @@ table {
 }
 #sClients img:active {
   transform: scale(1);
+}
+@media (min-width: 768px) {
+  #sClients img {
+    width: 30%;
+  }
 }
 #sClients p {
   width: 80%;
@@ -538,6 +565,11 @@ table {
 #sClients p strong {
   font-weight: bold;
   font-size: 1.75rem;
+}
+@media (min-width: 768px) {
+  #sClients p {
+    width: 40%;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
