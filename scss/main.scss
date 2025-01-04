@@ -8,6 +8,10 @@
 @use "components/buttons";
 @use "components/cards";
 
+html, body {
+    overflow-x: hidden; /*Evita desbordamientos*/
+}
+
 #sPresentation {
     width: 100%;
 
