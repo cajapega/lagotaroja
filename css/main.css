@@ -121,6 +121,20 @@ table {
 #sfooter .containerIcon a:hover {
   color: #A72F1E;
 }
+#sfooter span {
+  padding-block-start: 10%;
+  font-size: 0.5rem;
+  color: black;
+}
+@media (min-width: 768px) {
+  #sfooter span {
+    padding-block-start: 3%;
+    font-size: 0.8rem;
+  }
+}
+#sfooter span a {
+  color: black;
+}
 
 #header {
   height: 75px;

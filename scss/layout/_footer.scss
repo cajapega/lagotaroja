@@ -44,6 +44,17 @@
 
             }
         }
-        
+    }
+    span {
+        padding-block-start: 10%;
+        font-size: 0.5rem;
+        color: black;
+        @include for-large-screens {
+            padding-block-start: 3%;
+            font-size: 0.8rem;
+        }
+        a {
+            color: black;
+        }
     }
 }
