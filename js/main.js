@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', function () {
         if (window.innerWidth > 768) {
             imgElement.src = 'assets/images/products/gr-bolso.jpg'; 
         } else {
-            imgElement.src = 'assets/images/products/gr-5.jpg'; 
+            imgElement.src = 'assets/images/products/gr-vaso.jpeg'; 
         }
     }
 
